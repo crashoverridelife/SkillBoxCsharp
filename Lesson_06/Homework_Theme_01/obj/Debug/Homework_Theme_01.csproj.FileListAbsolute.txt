@@ -1,0 +1,13 @@
+C:\Users\surkov.v\Desktop\2.1_Исходники_Модуль_2\Lesson_06\Homework_Theme_01\bin\Debug\Homework_Theme_01.exe.config
+C:\Users\surkov.v\Desktop\2.1_Исходники_Модуль_2\Lesson_06\Homework_Theme_01\bin\Debug\Homework_Theme_01.exe
+C:\Users\surkov.v\Desktop\2.1_Исходники_Модуль_2\Lesson_06\Homework_Theme_01\bin\Debug\Homework_Theme_01.pdb
+C:\Users\surkov.v\Desktop\2.1_Исходники_Модуль_2\Lesson_06\Homework_Theme_01\obj\Debug\Homework_Theme_01.csproj.CoreCompileInputs.cache
+C:\Users\surkov.v\Desktop\2.1_Исходники_Модуль_2\Lesson_06\Homework_Theme_01\obj\Debug\Homework_Theme_01.exe
+C:\Users\surkov.v\Desktop\2.1_Исходники_Модуль_2\Lesson_06\Homework_Theme_01\obj\Debug\Homework_Theme_01.pdb
+C:\Users\surkov.v\source\repos\SkillBoxCsharp\Lesson_06\Homework_Theme_01\bin\Debug\Homework_Theme_01.exe.config
+C:\Users\surkov.v\source\repos\SkillBoxCsharp\Lesson_06\Homework_Theme_01\bin\Debug\Homework_Theme_01.exe
+C:\Users\surkov.v\source\repos\SkillBoxCsharp\Lesson_06\Homework_Theme_01\bin\Debug\Homework_Theme_01.pdb
+C:\Users\surkov.v\source\repos\SkillBoxCsharp\Lesson_06\Homework_Theme_01\obj\Debug\Homework_Theme_01.csprojAssemblyReference.cache
+C:\Users\surkov.v\source\repos\SkillBoxCsharp\Lesson_06\Homework_Theme_01\obj\Debug\Homework_Theme_01.csproj.CoreCompileInputs.cache
+C:\Users\surkov.v\source\repos\SkillBoxCsharp\Lesson_06\Homework_Theme_01\obj\Debug\Homework_Theme_01.exe
+C:\Users\surkov.v\source\repos\SkillBoxCsharp\Lesson_06\Homework_Theme_01\obj\Debug\Homework_Theme_01.pdb
