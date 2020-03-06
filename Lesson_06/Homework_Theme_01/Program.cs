@@ -41,38 +41,40 @@ namespace Homework_Theme_01
             // 5. В качестве бонусной части, за дополнительную оплату $50, заказчик просит реализовать 
             //    возможность вывода данных в центре консоли.
 
-            // ПОГНАЛИ
+     
 
-
+            /// Перечень данных необходимых для работы программы "Записная книжка"
             // Параметры
-            string name = "Илья Мохноножкин";
-            byte age = 16;
-            ushort height = 208;
-            double history = 3.4;
-            double mathematics = 4.7;
-            double russian = 2;
-            double mean = (history + mathematics + russian) / 3;
+            string name = "Илья Мохноножкин";   // Имя указанное в записной книжке
+            byte age = 16;                      // Возраст человека
+            ushort height = 208;                // Рост человека
+            double history = 3.4;               // Балл по истории
+            double mathematics = 4.7;           // Балл по математике
+            double russian = 2;                 // Бал по русскому
+            double mean = (history + mathematics + russian) / 3;        // Высчитывает средний балл по трем предматем
 
+            /// Код необходимый для "обычного" вывода данных в консоль
             // Обычный вывод данных в консоль
             WriteLine("Имя " + name + " " + "Возраст " + age + " " + "Рост " + height + " " + "История " + history + " " + "Математика " + mathematics + " " + "Русский " + russian);
-            WriteLine($"Средний балл: {mean.ToString("#.##")}");
+            WriteLine($"Средний балл: {mean.ToString("#.##")}"); // вывод текста и далее средний бал с 2-мя знаками после запятой 
 
+            /// Код для перехода к следующему заданию по нажатию определённой клавиши
             // Вывод новых данных по нажатию Enter
-            ForegroundColor = ConsoleColor.DarkGreen;
-            WriteLine("Для отображения интерполяции строк нажмите Enter");
-            ResetColor();
-            while (ReadKey().Key != ConsoleKey.Enter) { }
+            ForegroundColor = ConsoleColor.DarkGreen;  // Выбор цвета текста для дальнейшей операции
+            WriteLine("Для отображения интерполяции строк нажмите Enter"); // Отображение текста в ""
+            ResetColor(); // Возвращение исходных параметров цвета текста
+            while (ReadKey().Key != ConsoleKey.Enter) { }  // Продолжение операции по нажатию клавиши
 
-            // Форматированный вывод данных в консоль
+            /// Код вополняемый для отображения формированного вывода заданной информации
+            // Форматированный вывод данных в консоль. Данные выводятся с новой строки
             string pattern = "Имя: {0} \nВозраст: {1} \nРост: {2} \nИстория: {3} \nМатематика: {4} \nРусский: {5}";
-            WriteLine(pattern,
+              WriteLine(pattern,
                         name,
                         age,
                         height,
                         history,
                         mathematics,
                         russian);
-
             WriteLine($"Средний балл: {mean.ToString("#.##")}");
 
             // Вывод новых данных по нажатию Enter
@@ -81,9 +83,9 @@ namespace Homework_Theme_01
             ResetColor();
             while (ReadKey().Key != ConsoleKey.Enter) { }
 
-            // Интерполированный вывод данных в консоль
-            WriteLine($"Имя: {name} \nВозраст: {age} \nРост: {height} \nИстория: {history} \nМатематика: {mathematics} \nРусский: {russian}");
-
+            /// Код вополняемый для отображения интерполированного вывода заданной информации
+            // Интерполированный вывод данных в консоль. Данные выводятся с новой строки
+            WriteLine($"Имя: {name} \nВозраст: {age} \nРост: {height} \nИстория: {history} \nМатематика: {mathematics} \nРусский: {russian}"); 
             WriteLine($"Средний балл: {mean.ToString("#.##")}");
 
             // Вывод новых данных по нажатию Enter
@@ -92,21 +94,29 @@ namespace Homework_Theme_01
             ResetColor();
             while (ReadKey().Key != ConsoleKey.Enter) { }
 
-            string[] str = { "Имя: Илья Мохноножкин", "Возраст: 16", "Рост: 208", "История: 3.4", "Математика: 4.7", "Русский: 2", "Средний балл: 3.37" };
-            
-            Print();
-            void Print()
+            /// Вывод данных по центру консоли
+            // Создание переменной good вмещающей в себя нужные данные
+            string[] good = { "Имя: Илья Мохноножкин", "Возраст: 16", "Рост: 208", "История: 3.4", "Математика: 4.7", "Русский: 2", "Средний балл: 3.37" };
+
+            goPrint(); 
+            void goPrint() // Выполнение метода goPrint для отображения информацири по центру консоли
             {
-                Console.Clear();
-                int top = WindowHeight / 2 - str.Length / 2;
-                for (int i = 0; i < str.Length; i++, top++)
+                Clear(); // Очистка консоли от прошлой информации
+                int top = WindowHeight / 2 - good.Length / 2; // создание переменной top (центр экрана консоли)
+                for (int t = 0; t < good.Length; t++, top++) // Задание параметра - следующая информация после запятой выводится на строку ниже 
                 {
-                    Console.SetCursorPosition(Console.WindowWidth / 2 - str[i].Length / 2, top);
-                    Console.Write(str[i]); 
+                    SetCursorPosition(WindowWidth / 2 - good[t].Length / 2, top); // установка начального курсора в консоли по центру экрана с учетом количества знаков в данных
+                    Write(good[t]); // Вывод переменной good с параметром t
                 }
             }
 
-            ReadKey();
+            ReadKey(); // Ожидание нажатия любой клавиши
+
+
+
+
+
+
 
 
 
